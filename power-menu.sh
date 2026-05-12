@@ -3,7 +3,7 @@
 choice=$(printf "Lock\nSuspend\nLogout\nReboot\nPoweroff" | rofi -dmenu -case-smart -p "System control")
 
 case "$choice" in
-	Lock) loginctl lock-session ;;
+	Lock) hyprlock ;;
 	Suspend) systemctl suspend ;;
 	Logout) hyprctl logout ;;
 	Reboot) systemctl reboot ;;
