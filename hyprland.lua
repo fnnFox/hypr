@@ -1,0 +1,6 @@
+require("hyprland.monitor")
+require("hyprland.setup")
+require("hyprland.visual")
+require("hyprland.rules")
+require("hyprland.input")
+require("hyprland.bind")
