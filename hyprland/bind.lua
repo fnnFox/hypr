@@ -7,6 +7,7 @@ hl.bind("SUPER + SHIFT + ALT", hl.dsp.exit())
 -- [ APPLICATIONS LAUNCH CONTROL AREA ] --
 
 hl.bind("SUPER + D", hl.dsp.exec_cmd("pkill rofi || rofi -show drun"))
+hl.bind("SUPER + Space", hl.dsp.exec_cmd("pkill rofi || rofi -show drun"))
 hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
 hl.bind("SUPER + F", hl.dsp.exec_cmd("thunar"))
