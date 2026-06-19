@@ -19,6 +19,10 @@ hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { repeating = true, locked = true } )
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true } )
 
+-- [ CLIPBOARD CONTROL AREA ] --
+
+hl.bind("SUPER + V", hl.dsp.exec_cmd([[answer=$(cliphist list | rofi -dmenu) && cliphist decode "$answer" | wl-copy]]))
+
 -- [ SCREENSHOTS CONTROL AREA ] --
 
 -- Region -> Edit
